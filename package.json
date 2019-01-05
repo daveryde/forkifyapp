@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "forkify project",
   "main": "index.js",
+  "homepage": "https://daveryde.github.io/forkifyapp",
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
@@ -22,6 +24,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
-    "fractional": "^1.0.0"
+    "fractional": "^1.0.0",
+    "gh-pages": "^1.2.0",
+    "uniqid": "^5.0.3"
   }
 }
